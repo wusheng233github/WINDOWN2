@@ -30,68 +30,99 @@
         <div class="alert alert-info" role="alert">
             说明：默认是qcow2格式，没有额外安装驱动，也不会自带软件。
         </div>
-        导航:
-        <a href="#windows7">Windows 7</a>
-        <a href="#expired">失效链接</a>
-        <button data-bs-toggle="modal" data-bs-target="#config">点我查看使用教程</button>
+        <ul class="list-inline">
+            <li class="list-inline-item"><a href="#windows7">Windows 7</a></li>
+            <li class="list-inline-item"><a href="#windowsxp">Windows XP</a></li>
+            <li class="list-inline-item"><a href="#tools">其他工具</a></li>
+            <li class="list-inline-item"><a href="#expired">失效链接</a></li>
+            <!-- 不需要应用样式 -->
+            <li><button data-bs-toggle="modal" data-bs-target="#config">点我查看使用教程</button></li>
+        </ul>
         <h1 id="windows7">Windows 7</h1>
+        <hr>
         <p>无</p>
-        <div class="modal fade" id="config" tabindex="-1" role="dialog" aria-labelledby="modal-title" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="modal-title">虚拟机配置图</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="关闭">
-                            <span aria-hidden="true"></span>
-                        </button>
-                    </div>
-                    <div class="modal-body overflow-auto" style="max-height: 500px;">
-                        <h2>Qemu启动命令示例</h2>
-                        <code>qemu-system-x86_64.exe -m 1024 -smp 1,cores=1 -drive file=镜像文件.qcow2</code>
-                        <h2>Android</h2>
-                        <p>打开Limbo，按照如下配置</p>
-                        <img src="config.png" class="img-fluid" alt="配置图片">
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">关闭</button>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <h1 id="windowsxp">Windows XP</h1>
+        <hr>
+        <h2>AndowsXP</h2>
+        <details>
+            <summary>格式信息</summary>
+            <pre>
+image: andows.img
+file format: raw
+virtual size: 301 MiB (315334656 bytes)
+disk size: 301 MiB
+Child node '/file':
+    filename: andows.img
+    protocol type: file
+    file length: 301 MiB (315334656 bytes)
+    disk size: 301 MiB
+            </pre>
+        </details>
+        <p>下载地址: <a href="https://pan.moe/s/zjX2S0">https://pan.moe/s/zjX2S0</a></p>
+        <p>收集于网络。这是对Windows XP 32位版精简美化的系统，特点是大小仅300MB，可以在手机上流畅运行。</p>
+
+        <h1 id="tools">其他工具</h1>
+        <hr>
+        <h2>qcow2空白镜像大全</h2>
+        <p>下载地址: <a href="https://pan.moe/s/2VnYsE">https://pan.moe/s/2VnYsE</a></p>
         <a href="#" style="position: fixed;bottom: 10%;right: 0;z-index:10"><button type="button" class="btn btn-primary btn-lg">↑</button></a>
         <h1 id="expired">失效链接</h1>
+        <hr>
         <div class="alert alert-info" role="alert">
-            2026/01/23: pan.moe数据所在储存桶突然下线，已无法下载和访问，本站所有镜像已丢失，计划制作新镜像。
+            2026/01/23: pan.moe数据所在储存桶突然下线，已无法下载和访问，所有本站镜像已丢失，计划制作新镜像。
         </div>
-        <a href="https://pan.moe/s/OXKUZ?password=j55azz">https://pan.moe/s/OXKUZ?password=j55azz</a> 文件列表：64Gwin7旗舰版.qcow2、16Gwin7build7000ultimate.qcow2
+        <p><a href="https://pan.moe/s/OXKUZ?password=j55azz">https://pan.moe/s/OXKUZ?password=j55azz</a> 文件列表：64Gwin7旗舰版.qcow2、16Gwin7build7000ultimate.qcow2</p>
         <div class="alert alert-info" role="alert">
             2024/08/14: 发现已被huang1111网盘封号，不能登录，下面的分享链接全部失效了，不能下载，解封申请不通过。
         </div>
-        <a href="https://pan.huang1111.cn/s/j94NFy">https://pan.huang1111.cn/s/j94NFy</a><b>【Windows 7入门SP1超级精简版】</b>没激活，没密码，免安装。安装镜像来自https://crustywindo.ws/Windows_7_Extreme_Lite<br>
-        <a href="https://pan.huang1111.cn/s/Wgkyf3">https://pan.huang1111.cn/s/Wgkyf3</a><b>【Windows 7旗舰版SP1】</b>没激活，没密码，免安装。<br>
-        <a href="https://pan.huang1111.cn/s/a4MahG">https://pan.huang1111.cn/s/a4MahG</a><b>【Windows 7企业版】</b>没激活，没密码，免安装。<br>
-        <a href="https://pan.huang1111.cn/s/VD8aUd">https://pan.huang1111.cn/s/VD8aUd</a><b>【Windows ThinPC】</b>没激活，密码同用户名，免安装。<br>
-        <a href="https://pan.huang1111.cn/s/YaKzIA">https://pan.huang1111.cn/s/YaKzIA</a><b>【Windows 7旗舰版】</b>没激活，密码同用户名，免安装。<br>
-        <a href="https://pan.huang1111.cn/s/ZVnOtL">https://pan.huang1111.cn/s/ZVnOtL</a><b>【Windows 7旗舰版】</b>没激活，密码同用户名，免安装。<br>
-        <a href="https://pan.huang1111.cn/s/glM6sQ">https://pan.huang1111.cn/s/glM6sQ</a><b>【Windows 7旗舰版】</b>没激活，没密码，免安装。<br>
-        <a href="https://pan.huang1111.cn/s/PlaoSm">https://pan.huang1111.cn/s/PlaoSm</a><b>【Windows XP超级精简版】</b>没激活，没密码，免安装。安装镜像来自https://crustywindo.ws/Windows_XP_75MB_Edition<br>
-        <a href="https://pan.huang1111.cn/s/xx2kHV">https://pan.huang1111.cn/s/xx2kHV</a><b>【Windows 1.03】</b>收集于网络。<br>
-        <a href="https://pan.huang1111.cn/s/1jEzcv">https://pan.huang1111.cn/s/1jEzcv</a><b>【Andows XP】</b>收集于网络。<br>
-        <a href="https://pan.huang1111.cn/s/j8wduy">https://pan.huang1111.cn/s/j8wduy</a><b>【ReactOS 0.4.14】</b>没激活，没密码，免安装。<br>
-        <a href="https://pan.huang1111.cn/s/EO72tb">https://pan.huang1111.cn/s/EO72tb</a><b>【qcow2空镜像大全】</b>空白qcow2镜像。<br>
-        <a href="https://pan.huang1111.cn/s/8OQXsQ">https://pan.huang1111.cn/s/8OQXsQ</a><b>【Hacker's Keyboard】</b>可以打出特殊键。<br>
-        <a href="https://pan.huang1111.cn/s/b1nRuY">https://pan.huang1111.cn/s/b1nRuY</a><b>【Limbo亮色汉化版】</b>由wusheng233修改。<br>
+        <p><a href="https://pan.huang1111.cn/s/j94NFy">https://pan.huang1111.cn/s/j94NFy</a><b>【Windows 7入门SP1超级精简版】</b>没激活，没密码，免安装。安装镜像来自https://crustywindo.ws/Windows_7_Extreme_Lite</p>
+        <p><a href="https://pan.huang1111.cn/s/Wgkyf3">https://pan.huang1111.cn/s/Wgkyf3</a><b>【Windows 7旗舰版SP1】</b>没激活，没密码，免安装。</p>
+        <p><a href="https://pan.huang1111.cn/s/a4MahG">https://pan.huang1111.cn/s/a4MahG</a><b>【Windows 7企业版】</b>没激活，没密码，免安装。</p>
+        <p><a href="https://pan.huang1111.cn/s/VD8aUd">https://pan.huang1111.cn/s/VD8aUd</a><b>【Windows ThinPC】</b>没激活，密码同用户名，免安装。</p>
+        <p><a href="https://pan.huang1111.cn/s/YaKzIA">https://pan.huang1111.cn/s/YaKzIA</a><b>【Windows 7旗舰版】</b>没激活，密码同用户名，免安装。</p>
+        <p><a href="https://pan.huang1111.cn/s/ZVnOtL">https://pan.huang1111.cn/s/ZVnOtL</a><b>【Windows 7旗舰版】</b>没激活，密码同用户名，免安装。</p>
+        <p><a href="https://pan.huang1111.cn/s/glM6sQ">https://pan.huang1111.cn/s/glM6sQ</a><b>【Windows 7旗舰版】</b>没激活，没密码，免安装。</p>
+        <p><a href="https://pan.huang1111.cn/s/PlaoSm">https://pan.huang1111.cn/s/PlaoSm</a><b>【Windows XP超级精简版】</b>没激活，没密码，免安装。安装镜像来自https://crustywindo.ws/Windows_XP_75MB_Edition</p>
+        <p><a href="https://pan.huang1111.cn/s/xx2kHV">https://pan.huang1111.cn/s/xx2kHV</a><b>【Windows 1.03】</b>收集于网络。</p>
+        <p><a href="https://pan.huang1111.cn/s/1jEzcv">https://pan.huang1111.cn/s/1jEzcv</a><b>【Andows XP】</b>收集于网络。√ 已找回</p>
+        <p><a href="https://pan.huang1111.cn/s/j8wduy">https://pan.huang1111.cn/s/j8wduy</a><b>【ReactOS 0.4.14】</b>没激活，没密码，免安装。</p>
+        <p><a href="https://pan.huang1111.cn/s/EO72tb">https://pan.huang1111.cn/s/EO72tb</a><b>【qcow2空镜像大全】</b>空白qcow2镜像。√ 已找回</p>
+        <p><a href="https://pan.huang1111.cn/s/8OQXsQ">https://pan.huang1111.cn/s/8OQXsQ</a><b>【Hacker's Keyboard】</b>可以打出特殊键。</p>
+        <p><a href="https://pan.huang1111.cn/s/b1nRuY">https://pan.huang1111.cn/s/b1nRuY</a><b>【Limbo亮色汉化版】</b>由wusheng233修改。</p>
         <hr>
         <p>相关网站</p>
-        <a href="https://steve372yeyeye.github.io/">模拟器镜像下载站</a>
-        <a href="https://msdn.itellyou.cn/">MSDN系统库（itellyou）</a>
-        <a href="https://tieba.baidu.com/f?kw=limbo%25E6%25A8%25A1%25E6%258B%259F%25E5%2599%25A8">limbo模拟器吧</a>
-        <a href="https://tieba.baidu.com/f?kw=bochs">bochs吧</a>
-        <a href="https://7-zip.org/">7-zip</a>
-        <a href="https://github.com/wusheng233github/WINDOWN2">本站的github，欢迎来帮助</a>
-        <br>
+        <ul class="list-inline">
+            <li class="list-inline-item"><a href="https://steve372yeyeye.github.io/">模拟器镜像下载站</a></li>
+            <li class="list-inline-item"><a href="https://msdn.itellyou.cn/">MSDN系统库（itellyou）</a></li>
+            <li class="list-inline-item"><a href="https://tieba.baidu.com/f?kw=limbo%25E6%25A8%25A1%25E6%258B%259F%25E5%2599%25A8">limbo模拟器吧</a></li>
+            <li class="list-inline-item"><a href="https://tieba.baidu.com/f?kw=bochs">bochs吧</a></li>
+            <li class="list-inline-item"><a href="https://7-zip.org/">7-zip</a></li>
+            <li class="list-inline-item"><a href="https://github.com/wusheng233github/WINDOWN2">本站的github，欢迎来帮助</a></li>
+        </ul>
         <a href="https://info.flagcounter.com/WWlJ"><img src="https://s05.flagcounter.com/count2/WWlJ/bg_FFFFFF/txt_000000/border_CCCCCC/columns_3/maxflags_18/viewers_0/labels_0/pageviews_0/flags_0/percent_0/" alt="Flag Counter" border="0"></a>
         <img src="https://count.himiku.com/get/@windown666wusheng233666?theme=rule34">
+    </div>
+    <div class="modal fade" id="config" tabindex="-1" role="dialog" aria-labelledby="modal-title" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal-title">虚拟机配置图</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="关闭">
+                        <span aria-hidden="true"></span>
+                    </button>
+                </div>
+                <div class="modal-body overflow-auto" style="max-height: 500px;">
+                    <h2>Qemu启动命令示例</h2>
+                    <code>qemu-system-x86_64.exe -m 1024 -smp 1,cores=1 -drive file=镜像文件.qcow2</code>
+                    <h2>Android</h2>
+                    <p>打开Limbo，按照如下配置</p>
+                    <img src="config.png" class="img-fluid" alt="配置图片">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">关闭</button>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 
