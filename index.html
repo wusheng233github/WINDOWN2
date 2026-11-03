@@ -7,15 +7,26 @@
     <meta charset="utf-8">
     <meta name="description" content="免安装qcow2格式纯净windows系统镜像免费下载的网站">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.15.2/viewer.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.15.2/viewer.min.js"></script>
     <link rel="icon" href="favicon.ico">
     <style>
         body {
             --bs-primary-rgb: 70, 87, 183;
             word-break: break-all;
         }
+
         .img {
             height: 100px;
+        }
+
+        .mTable {
+            max-width: 500px;
+        }
+
+        .gallery .img:hover {
+            cursor: pointer;
         }
     </style>
 </head>
@@ -43,17 +54,64 @@
         </ul>
         <h1 id="windows7">Windows 7</h1>
         <hr>
-        <p>无</p>
+        <h2>windows7旗舰版</h2>
+        <div class="gallery">
+            <img class="img" src="pictures/win7ultimate1/win7.png">
+            <img class="img" src="pictures/win7ultimate1/win71.png">
+            <img class="img" src="pictures/win7ultimate1/win72.png">
+            <img class="img" src="pictures/win7ultimate1/win73.png">
+        </div>
+        <table class="table table-bordered table-striped mTable">
+            <thead>
+                <tr>
+                    <td>架构</td>
+                    <td>语言</td>
+                    <td>驱动</td>
+                    <td>激活</td>
+                    <td>精简</td>
+                    <td>密码</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>x86_64</td>
+                    <td>中文</td>
+                    <td>✗</td>
+                    <td>✗</td>
+                    <td>✗</td>
+                    <td>无</td>
+                </tr>
+            </tbody>
+        </table>
+        <details>
+            <summary>详细信息</summary>
+            <pre>
+校验码
+ce704aba0fae3ea3713bf35c255f5bf7b4ac6d160e4f5b358b661e8416515cc0 *windows7旗舰版免安装未激活管理员无密码.qcow2
+9d4d81d962bb4565a190caa850167d2b8cbe1e35b8bbdad964259b59ca5decc2 *windows7旗舰版免安装未激活管理员无密码.compressed.qcow2
+b70c8ca18ee986b1f77a837c12bef147fc84464bed8f3c2506085cb576799fa4 *windows7旗舰版免安装未激活管理员无密码.7z
+安装命令
+qemu-system-x86_64.exe -cpu qemu64 -m 1024 -smp 1,cores=1 -drive file=windows7.qcow2 -cdrom F:\iso\cn_windows_7_ultimate_with_sp1_x64_dvd_u_677408.iso -device virtio-gpu-pci -device intel-hda -device hda-output,audiodev=snd0 -audiodev sdl,id=snd0
+            </pre>
+        </details>
+        <p>下载地址: <a href="https://pan.moe/s/rdOMCp">https://pan.moe/s/rdOMCp</a></p>
+        <p>安装日期: 2026/11/03</p>
         <h1 id="windowsxp">Windows XP</h1>
         <hr>
         <h2>AndowsXP</h2>
-        <img class="img" src="pictures/andows/andows.png">
-        <img class="img" src="pictures/andows/andows1.png">
-        <img class="img" src="pictures/andows/andows2.png">
-        <img class="img" src="pictures/andows/andows3.png">
+        <div class="gallery">
+            <img class="img" src="pictures/andows/andows.png">
+            <img class="img" src="pictures/andows/andows1.png">
+            <img class="img" src="pictures/andows/andows2.png">
+            <img class="img" src="pictures/andows/andows3.png">
+        </div>
         <details>
-            <summary>格式信息</summary>
+            <summary>详细信息</summary>
             <pre>
+校验码
+dfb174de27d23051716ca5489cacac93898c5a4c179a653ada28132f801a19fd *andows.img
+fd7b29a8a9afd2bfc25687ec25ae144215ba14308aee86c6874e95de60a32e8e *andows.7z
+
 image: andows.img
 file format: raw
 virtual size: 301 MiB (315334656 bytes)
@@ -131,6 +189,22 @@ Child node '/file':
             </div>
         </div>
     </div>
+    <script>
+        document.querySelectorAll('.gallery').forEach(function (container) {
+            new Viewer(container, {
+                toolbar: {
+                    zoomIn: 1,
+                    zoomOut: 1,
+                    oneToOne: 1,
+                    reset: 1,
+                },
+                navbar: {
+                    show: false,
+                },
+                transition: false,
+            });
+        });
+    </script>
 </body>
 
 </html>
